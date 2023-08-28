@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul { list-style-type: none; }
+a { text-decoration: none; }
+
+body {
+  font-family: 'Shabnam';
+}
+@font-face {
+  font-family: 'Shabnam';
+  src:url("/fonts/Shabnam-FD.ttf");
+}
+
+/* video-js configs */
+video {
+  width: 100%; max-height: 400px; display: block; border-radius: 5px; 
+  overflow: hidden; cursor: pointer;
+}
+video img {
+  width: 100%; height: 100%; display: block; object-fit: cover;
+}
+
+.modal .scrnSht {
+  width: 100%; height: auto; display: block; margin-top: 30px;
+}
+.modal .scrnSht img {
+  width: 100%; height: auto; display: block; margin-top: 10px;
+}
+
+/* header________________________________________________________________________________ */
+
+
+/* main _____________________________________________________________________________________________ */
+
+main { margin-top: 0 !important; }
+
+  main .majorTopic {
+    width: 100%; max-height: 700px; display: flex; flex-direction: row;
+    justify-content: space-evenly; background-color: #eee; overflow: hidden;
+    padding: 20px;
+  }
+  @media (max-width: 767.98px) {
+    main .majorTopic {
+      flex-direction: column; max-height: 100%; justify-content: center;
+      text-align: center; align-content: center;
+    }
+  }
+    main .majorTopic .mt-Info {
+      width: auto; height: auto; display: block; margin: auto 0;
+    }
+      main .majorTopic .mt-Info .mti-Title {
+        width: 100%; height: auto; display: block; margin: 40px 0;
+        font-size: 26px; font-weight: bold;
+      }
+        main .majorTopic .mt-Info .mti-Title .mt-name span:first-child {
+          color: #008000;
+        }
+        main .majorTopic .mt-Info .mti-Title .mt-name span:last-child {
+          color: #ff0000; margin: 0 -7px 0 0;
+        }
+        main .majorTopic .mt-Info .mti-Title .mt-html {
+          font-weight: normal; font-size: 14px; color: #555;
+        }
+        main .majorTopic .mt-Info .mti-Title .mt-desc {
+          font-weight: normal; font-size: 14px; line-height: 1.7; color: #333;
+        }
+    /* majorTopic */
+    main .majorTopic .mt-pic {
+      width: auto; height: auto; overflow: hidden; border-radius: 15px;
+    }
+      main .majorTopic .mt-pic div { 
+        overflow: hidden; border-radius: 15px; transform: rotate(-10deg) scale(.8);
+      }
+        main .majorTopic .mt-pic div img {
+          overflow: hidden; height: 100%; width: 100%; cursor: pointer;
+          display: block; object-fit: scale-down; border-radius: 15px;
+        }
+  /* pages */
+  main .pages {
+    width: 100%; height: auto; display: block; padding: 50px 0;
+  }
+    main .pages .pageList {
+      width: 100%; height: auto; display: grid; grid-template-columns: repeat(3, 33%);
+      grid-template-rows: auto; grid-auto-flow: row; column-gap: 20px; row-gap: 40px;
+      margin: 40px 0;
+    }
+      main .pages .pageList li {
+        cursor: pointer;
+      }
+    @media (max-width: 575.98px) {
+      main .pages .pageList {
+        grid-template-columns: repeat(1, 100%);
+      }
+    }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      main .pages .pageList {
+        grid-template-columns: repeat(2, 48%);
+      }
+    }
+      main .pages .pageList a {
+        width: 100%; height: auto; display: flex; flex-direction: column; position: relative;
+        transition: all .3s;
+      }
+        main .pages .pageList a .card {
+          width: 85%; height: 350px; display: block; object-fit: scale-down; border: none;
+          overflow: hidden; text-align: center; margin: 0 auto; transition: all .3s;
+          position: relative;
+        }
+          main .pages .pageList a:hover .card {
+            transform: translate(0, -5px);
+          }
+        main .pages .pageList a .card::before {
+          width: 100%; height: 100%; display: block; position: absolute;
+          content: ''; bottom: 0; right: 0;
+          box-shadow: inset 0px -40px 20px 0px rgba(255, 255, 255, 0.99);
+        }
+          main .pages .pageList a .card .shadow_bg {
+            width: 100%; height: 0; display: block; position: absolute; top: 0; right: 0;
+            transition: all .3s; opacity: 0; transform-origin: right top;
+            background-color: rgba(255, 255, 255, 0.95); 
+          }
+            main .pages .pageList a:hover .shadow_bg {
+              height: 100%; opacity: 1;
+            }
+          main .pages .pageList a .card img {
+            max-width: 100%; min-height: 100%; border: 1px solid #eee;
+          }
+          main .pages .pageList a .card p {
+            transition: all .3s; opacity: 0; padding: 0 30px;
+            width: 100%; height: 100%; display: flex; text-align: center;
+            position: absolute; top: 0; right: 0;  line-height: 1.7;
+            justify-content: center; align-content: center; 
+            flex-direction: column; font-size: 14px; color: #333;
+          }
+            main .pages .pageList a:hover .card p {
+              opacity: 1;
+            }
+        main .pages .pageList a button {
+          width: 100%; height: auto; display: block; text-align: center;
+          padding: 20px 0; font-size: 13px; color: #555; transition: all .3s;
+          position: relative;
+        }
+          main .pages .pageList a button::after {
+            content: ''; width: 0; height: 2px; background-color: #d00;
+            position: absolute; bottom: 0; right: 15%; display: block;
+            transition: all .3s; transform: translate(-15%, 0);
+            transform-origin: right center;
+          }
+            main .pages .pageList a:hover button::after {
+              width: 53%; transition: all .3s;
+            }
+
+
+/* DarkMode */
+
+/* Custome */
+
+
