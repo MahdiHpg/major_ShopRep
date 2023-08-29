@@ -10,7 +10,7 @@ body {
 }
 @font-face {
   font-family: 'Shabnam';
-  src:url("/fonts/Shabnam-FD.ttf");
+  src:url("./fonts/Shabnam-FD.ttf");
 }
 
 /* video-js configs */
