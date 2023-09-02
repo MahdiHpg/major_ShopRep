@@ -7,6 +7,7 @@ https://mahdihpg.github.io/major_ShopRep/
 - کدنویسی تمیز و استاندارد
 - با طراحی تم تاریک (Dark Mode ) و صفحات وبلاگ
 
+### پکیج چند منظوره ورود به بازار کار – فول استک شوید https://sourceiran.com/product/versatile-programmer/
 _____________________________________________________________________________________________________
 
 https://mahdihpg.github.io/major_ShopRep/
